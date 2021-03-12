@@ -12,6 +12,7 @@
 		3E0C64AA25FBB203000973AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E0C64A825FBB203000973AD /* Main.storyboard */; };
 		3E0C64AC25FBB204000973AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E0C64AB25FBB204000973AD /* Assets.xcassets */; };
 		3E0C64AF25FBB204000973AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E0C64AD25FBB204000973AD /* LaunchScreen.storyboard */; };
+		3EB99D8225FC08D600A69DFB /* RefeicoesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB99D8125FC08D600A69DFB /* RefeicoesTableViewController.swift */; };
 		3EBA6B8A25FBEA5700C552CA /* Refeicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBA6B8925FBEA5700C552CA /* Refeicao.swift */; };
 		3EBA6B8C25FBEAA800C552CA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBA6B8B25FBEAA800C552CA /* Item.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 		3E0C64AB25FBB204000973AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E0C64AE25FBB204000973AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E0C64B025FBB204000973AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EB99D8125FC08D600A69DFB /* RefeicoesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefeicoesTableViewController.swift; sourceTree = "<group>"; };
 		3EBA6B8725FBC76400C552CA /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MyPlayground.playground; path = "../../../../Library/Autosave Information/MyPlayground.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		3EBA6B8825FBC7FA00C552CA /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		3EBA6B8925FBEA5700C552CA /* Refeicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refeicao.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				3E0C64A625FBB203000973AD /* ViewController.swift */,
+				3EB99D8125FC08D600A69DFB /* RefeicoesTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			files = (
 				3EBA6B8C25FBEAA800C552CA /* Item.swift in Sources */,
 				3E0C64A725FBB203000973AD /* ViewController.swift in Sources */,
+				3EB99D8225FC08D600A69DFB /* RefeicoesTableViewController.swift in Sources */,
 				3EBA6B8A25FBEA5700C552CA /* Refeicao.swift in Sources */,
 				3E0C64A525FBB203000973AD /* AppDelegate.swift in Sources */,
 			);
