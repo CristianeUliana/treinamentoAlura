@@ -12,6 +12,8 @@
 		3E0C64AA25FBB203000973AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E0C64A825FBB203000973AD /* Main.storyboard */; };
 		3E0C64AC25FBB204000973AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E0C64AB25FBB204000973AD /* Assets.xcassets */; };
 		3E0C64AF25FBB204000973AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E0C64AD25FBB204000973AD /* LaunchScreen.storyboard */; };
+		3EBA6B8A25FBEA5700C552CA /* Refeicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBA6B8925FBEA5700C552CA /* Refeicao.swift */; };
+		3EBA6B8C25FBEAA800C552CA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBA6B8B25FBEAA800C552CA /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		3E0C64AB25FBB204000973AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E0C64AE25FBB204000973AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E0C64B025FBB204000973AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EBA6B8725FBC76400C552CA /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MyPlayground.playground; path = "../../../../Library/Autosave Information/MyPlayground.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		3EBA6B8825FBC7FA00C552CA /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		3EBA6B8925FBEA5700C552CA /* Refeicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refeicao.swift; sourceTree = "<group>"; };
+		3EBA6B8B25FBEAA800C552CA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +44,7 @@
 		3E0C649825FBB203000973AD = {
 			isa = PBXGroup;
 			children = (
+				3EBA6B8725FBC76400C552CA /* MyPlayground.playground */,
 				3E0C64A325FBB203000973AD /* eggplant-brownie */,
 				3E0C64A225FBB203000973AD /* Products */,
 			);
@@ -55,13 +62,40 @@
 			isa = PBXGroup;
 			children = (
 				3E0C64A425FBB203000973AD /* AppDelegate.swift */,
-				3E0C64A625FBB203000973AD /* ViewController.swift */,
-				3E0C64A825FBB203000973AD /* Main.storyboard */,
+				3EBA6B8D25FBEB1C00C552CA /* Models */,
+				3EBA6B8F25FBEB4800C552CA /* Views */,
+				3EBA6B8E25FBEB3400C552CA /* Controllers */,
 				3E0C64AB25FBB204000973AD /* Assets.xcassets */,
+				3EBA6B8825FBC7FA00C552CA /* MyPlayground.playground */,
 				3E0C64AD25FBB204000973AD /* LaunchScreen.storyboard */,
 				3E0C64B025FBB204000973AD /* Info.plist */,
 			);
 			path = "eggplant-brownie";
+			sourceTree = "<group>";
+		};
+		3EBA6B8D25FBEB1C00C552CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3EBA6B8925FBEA5700C552CA /* Refeicao.swift */,
+				3EBA6B8B25FBEAA800C552CA /* Item.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3EBA6B8E25FBEB3400C552CA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3E0C64A625FBB203000973AD /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3EBA6B8F25FBEB4800C552CA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3E0C64A825FBB203000973AD /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +169,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EBA6B8C25FBEAA800C552CA /* Item.swift in Sources */,
 				3E0C64A725FBB203000973AD /* ViewController.swift in Sources */,
+				3EBA6B8A25FBEA5700C552CA /* Refeicao.swift in Sources */,
 				3E0C64A525FBB203000973AD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
