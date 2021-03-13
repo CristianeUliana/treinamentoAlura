@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E07FA8D25FD5FC0009158CD /* AdicionarItensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E07FA8B25FD5FC0009158CD /* AdicionarItensViewController.swift */; };
+		3E07FA8E25FD5FC0009158CD /* AdicionarItensViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E07FA8C25FD5FC0009158CD /* AdicionarItensViewController.xib */; };
 		3E0C64A525FBB203000973AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C64A425FBB203000973AD /* AppDelegate.swift */; };
 		3E0C64A725FBB203000973AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0C64A625FBB203000973AD /* ViewController.swift */; };
 		3E0C64AA25FBB203000973AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E0C64A825FBB203000973AD /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E07FA8B25FD5FC0009158CD /* AdicionarItensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdicionarItensViewController.swift; sourceTree = "<group>"; };
+		3E07FA8C25FD5FC0009158CD /* AdicionarItensViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdicionarItensViewController.xib; sourceTree = "<group>"; };
 		3E0C64A125FBB203000973AD /* eggplant-brownie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eggplant-brownie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E0C64A425FBB203000973AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E0C64A625FBB203000973AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +91,7 @@
 		3EBA6B8E25FBEB3400C552CA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3E07FA8B25FD5FC0009158CD /* AdicionarItensViewController.swift */,
 				3E0C64A625FBB203000973AD /* ViewController.swift */,
 				3EB99D8125FC08D600A69DFB /* RefeicoesTableViewController.swift */,
 			);
@@ -97,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				3E0C64A825FBB203000973AD /* Main.storyboard */,
+				3E07FA8C25FD5FC0009158CD /* AdicionarItensViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -161,6 +167,7 @@
 			files = (
 				3E0C64AF25FBB204000973AD /* LaunchScreen.storyboard in Resources */,
 				3E0C64AC25FBB204000973AD /* Assets.xcassets in Resources */,
+				3E07FA8E25FD5FC0009158CD /* AdicionarItensViewController.xib in Resources */,
 				3E0C64AA25FBB203000973AD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EBA6B8C25FBEAA800C552CA /* Item.swift in Sources */,
+				3E07FA8D25FD5FC0009158CD /* AdicionarItensViewController.swift in Sources */,
 				3E0C64A725FBB203000973AD /* ViewController.swift in Sources */,
 				3EB99D8225FC08D600A69DFB /* RefeicoesTableViewController.swift in Sources */,
 				3EBA6B8A25FBEA5700C552CA /* Refeicao.swift in Sources */,
