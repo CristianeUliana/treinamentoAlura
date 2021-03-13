@@ -8,16 +8,57 @@
 
 import UIKit
 
-protocol ViewControllerDelegate {
+protocol AdicionaRefeicaoDelegate {
     func add(_ refeicao: Refeicao)
 }
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var delegate: ViewControllerDelegate?
+    // MARK - Atributos
+    
+    var delegate: AdicionaRefeicaoDelegate?
+    var itens: [Item] = [Item(nome: "Molho de tomate", calorias: 40), Item(nome: "Molho Apimentado", calorias: 40), Item(nome: "Manjericão", calorias: 40)]
+    
+    var itensSelecionados: [Item] = []
+    
+    // MARK - IBOutlets
 
     @IBOutlet weak var nomeTextField: UITextField?
     @IBOutlet weak var felicidadeTextField: UITextField?
+    
+    // MARK - UITableViewDataSource
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return itens.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let celula = UITableViewCell(style: .default, reuseIdentifier: nil)
+        let linhaDaTabela = indexPath.row
+        let item = itens[linhaDaTabela]
+        celula.textLabel?.text = item.nome
+        return celula
+    }
+    
+    // MARK - UITableViewDelegate
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let celula = tableView.cellForRow(at: indexPath) else {return}
+        
+        if celula.accessoryType == .none {
+            celula.accessoryType = .checkmark
+            let linhaDaTabela = indexPath.row
+            itensSelecionados.append(itens[linhaDaTabela])
+        } else {
+            celula.accessoryType = .none
+            let item = itens[indexPath.row]
+            if let position = itensSelecionados.index(of: item) {
+                itensSelecionados.remove(at: position)
+            }
+        }
+    }
+    
+    // MARK - IBActions
     
     @IBAction func adicionar(_ sender: Any) {
         
@@ -29,9 +70,7 @@ class ViewController: UIViewController {
             return
         }
         
-        let refeicao = Refeicao(nome: nomeDaRefeicao, felicidade: felicidade)
-    
-        print("Comi \(refeicao.nome) e fiquei com felicidade \(refeicao.felicidade)")
+        let refeicao = Refeicao(nome: nomeDaRefeicao, felicidade: felicidade, itens: itensSelecionados)
         
         delegate?.add(refeicao)
         

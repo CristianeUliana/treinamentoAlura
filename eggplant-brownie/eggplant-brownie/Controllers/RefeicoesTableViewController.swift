@@ -9,7 +9,7 @@
 import UIKit
 
 
-class RefeicoesTableViewController: UITableViewController, ViewControllerDelegate {
+class RefeicoesTableViewController: UITableViewController, AdicionaRefeicaoDelegate {
     
     var refeicoes = [Refeicao(nome: "Macarrão", felicidade: 3), Refeicao(nome: "Pizza", felicidade: 4), Refeicao(nome: "Sushi", felicidade: 5),]
     
@@ -21,7 +21,6 @@ class RefeicoesTableViewController: UITableViewController, ViewControllerDelegat
         let celula = UITableViewCell(style: .default, reuseIdentifier: nil)
         let refeicao = refeicoes[indexPath.row]
         celula.textLabel?.text = refeicao.nome
-        
         return celula
     }
     
